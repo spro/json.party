@@ -1,0 +1,56 @@
+$colors
+    blue: #3798F8
+    light_blue: #53a0fe
+    green: #b4ed50
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font: 15px/20px Menlo, sans-serif
+    background: $colors.blue
+    background: -moz-linear-gradient(-45deg, $colors.blue 0%, $colors.light_blue 32%, $colors.green 100%)
+    background: -webkit-linear-gradient(-45deg, $colors.blue 0%, $colors.light_blue 32%, $colors.green 100%)
+    background: linear-gradient(135deg, $colors.blue 0%, $colors.light_blue 32%, $colors.green 100%)
+    text-align: center
+    color: #fff
+    padding: 40px
+
+h1
+    font-size: 25px
+    font-weight: bold
+    margin: 20px 0 10px
+
+#examples
+    padding-top: 40px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    margin: 0 auto
+    justify-content: center
+
+.example
+    display: block
+    width: 450px
+    text-align: left
+    padding: 20px
+    margin: 10px
+    border-radius: 3px
+    background: #fff
+    color: #000
+    cursor: pointer
+    text-decoration: none
+
+    h2
+        font-size: 20px
+        margin-bottom: 20px
+        color: $colors.blue
+
+    &:hover
+        h2
+            text-decoration: underline
+
+    pre
+        word-break: break-word
